@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/alexsomeoddpilot/sop-styl",
   "dependencies": {
-    "nib": "^1.0.4",
+    "nib": "*",
     "stylus": "0.45.x"
   },
   "engines": {
