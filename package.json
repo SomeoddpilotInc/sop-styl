@@ -1,0 +1,23 @@
+{
+  "name": "sop-styl",
+  "version": "1.0.0",
+  "description": "Someoddpilot's base Stylus framework",
+  "main": "lib/sop-styl.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexsomeoddpilot/sop-styl.git"
+  },
+  "keywords": [
+    "stylus",
+    "styl"
+  ],
+  "author": "Alex Robertson <alex@someoddpilot.com>",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/alexsomeoddpilot/sop-styl/issues"
+  },
+  "homepage": "https://github.com/alexsomeoddpilot/sop-styl"
+}
