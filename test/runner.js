@@ -5,7 +5,7 @@ var stylus = require("stylus"),
 // test cases
 
 var cases = fs.readdirSync("test/cases").filter(function(file){
-  return ~file.indexOf(".styl");
+  return file.match(/\.styl$/);
 }).map(function(file){
   return file.replace(".styl", "");
 });
