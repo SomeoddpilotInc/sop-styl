@@ -1,6 +1,6 @@
 {
   "name": "sop-styl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Someoddpilot's base Stylus framework",
   "main": "lib/sop-styl.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/alexsomeoddpilot/sop-styl",
   "dependencies": {
+    "nib": "^1.0.4",
     "stylus": "0.45.x"
   },
   "engines": {
