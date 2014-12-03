@@ -19,5 +19,17 @@
   "bugs": {
     "url": "https://github.com/alexsomeoddpilot/sop-styl/issues"
   },
-  "homepage": "https://github.com/alexsomeoddpilot/sop-styl"
+  "homepage": "https://github.com/alexsomeoddpilot/sop-styl",
+  "dependencies": {
+    "stylus": "0.45.x"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {
+    "connect": "^3.3.3",
+    "jade": "^1.8.1",
+    "mocha": "^2.0.1",
+    "should": "^4.3.0"
+  }
 }
