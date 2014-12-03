@@ -27,7 +27,7 @@
     "node": "*"
   },
   "devDependencies": {
-    "connect": "^3.3.3",
+    "connect": "1.x",
     "jade": "0.22.0",
     "mocha": "*",
     "should": "*"
