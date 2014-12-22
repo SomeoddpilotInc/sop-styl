@@ -1,0 +1,76 @@
+$gallery-margin-bottom ?= 20px
+
+$gallery-grid-columns ?= 9
+
+$gallery-grid-item-padding        ?= 2px
+$gallery-grid-item-padding-left   ?= $gallery-grid-item-padding
+$gallery-grid-item-padding-right  ?= $gallery-grid-item-padding
+$gallery-grid-item-padding-top    ?= $gallery-grid-item-padding
+$gallery-grid-item-padding-bottom ?= $gallery-grid-item-padding
+
+$gallery-caption-background-color ?= rgba(0, 0, 0, 0.7)
+$gallery-caption-text-color       ?= #fff
+$gallery-caption-padding          ?= 6px 8px
+$gallery-caption-font-size        ?= 12em
+
+.gallery
+  margin-bottom $gallery-margin-bottom
+
+.gallery-item
+  position relative
+  float    left
+
+  margin 0
+
+  padding $gallery-grid-item-padding-top $gallery-grid-item-padding-right $gallery-grid-item-padding-bottom $gallery-grid-item-padding-left
+
+  overflow hidden
+
+  img
+    margin-left  auto
+    margin-right auto
+
+  for $num-columns in (1..$gallery-grid-columns)
+    .gallery-columns-{$num-columns} &
+      max-width (100 / $num-columns)%
+
+.gallery-caption
+  position absolute
+
+  bottom $gallery-grid-item-padding-bottom
+  right  $gallery-grid-item-padding-right
+  left   $gallery-grid-item-padding-left
+
+  max-height 50%
+
+  padding $gallery-caption-padding
+
+  font-size  $gallery-caption-font-size
+  text-align left
+
+  background-color $gallery-caption-background-color
+
+  color $gallery-caption-text-color
+
+  opacity 0
+
+  transition opacity .2s
+
+  &:before
+    content ""
+    position absolute
+
+    top  0
+    left 0
+
+    height     100%
+    min-height 49px
+    width      100%
+
+  .gallery-itemhover &
+    opacity 1
+
+  .gallery-columns-7 &,
+  .gallery-columns-8 &,
+  .gallery-columns-9 &
+    display none
