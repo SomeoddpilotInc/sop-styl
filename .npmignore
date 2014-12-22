@@ -9,3 +9,5 @@ _*
 .svn
 *~
 npm-debug.log
+.travis.yml
+.editorconfig
