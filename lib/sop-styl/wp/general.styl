@@ -1,0 +1,66 @@
+$align-margin-default             ?= 7px
+$align-margin-side-multiplier     ?= 2
+$align-margin-side-large-addition ?= 10
+
+$align-margin-top        ?= $align-margin-default
+$align-margin-bottom     ?= $align-margin-default
+$align-margin-side       ?= $align-margin-default * $align-margin-side-multiplier
+$align-margin-side-large ?= $align-margin-side + $align-margin-side-large-addition
+
+$blockquote-align-spacing ?= 17px
+
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img,
+.wp-caption,
+.comment-content img[height],
+.entry-content img,
+.entry-summary img
+  display block
+
+  max-width 100%
+  height    auto
+
+.aligncenter
+  display block
+
+  margin-left  auto
+  margin-right auto
+
+.alignleft
+  float left
+
+  &.wp-caption
+    margin $align-margin-top $align-margin-side $align-margin-bottom 0
+
+blockquote,
+figure.wp-caption,
+img
+  &.alignleft
+    margin $align-margin-top $align-margin-side-large $align-margin-bottom 0
+
+.alignright
+  float right
+
+  &.wp-caption
+    margin $align-margin-top 0 $align-margin-bottom $align-margin-side
+
+blockquote,
+img,
+.wp-caption
+  .aligncenter
+    margin-top    $align-margin-top
+    margin-bottom $align-margin-bottom
+
+.site-content blockquote
+  &.alignleft,
+  &.alignright
+    padding-top $blockquote-align-spacing
+    width 50%
+
+    p
+      margin-bottom $blockquote-align-spacing
+
+.wp-caption
+  margin-bottom $align-margin-side-large
