@@ -1,6 +1,6 @@
 {
   "name": "sop-styl",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Someoddpilot's base Stylus framework",
   "main": "lib/sop-styl.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/alexsomeoddpilot/sop-styl",
   "dependencies": {
     "nib": "*",
-    "stylus": "0.49.x"
+    "stylus": ">0.45"
   },
   "engines": {
     "node": "*"
@@ -31,7 +31,6 @@
     "connect": "3.x",
     "jade": "1.x",
     "mocha": "*",
-    "should": "*",
-    "stylus": "^0.49.3"
+    "should": "*"
   }
 }
