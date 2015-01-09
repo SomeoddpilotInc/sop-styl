@@ -22,7 +22,7 @@
   "homepage": "https://github.com/alexsomeoddpilot/sop-styl",
   "dependencies": {
     "nib": "*",
-    "stylus": "0.45.x"
+    "stylus": "0.49.x"
   },
   "engines": {
     "node": "*"
@@ -31,6 +31,7 @@
     "connect": "3.x",
     "jade": "1.x",
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "stylus": "^0.49.3"
   }
 }
