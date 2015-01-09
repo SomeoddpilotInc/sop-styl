@@ -27,6 +27,7 @@
   "engines": {
     "node": ">0.10"
   },
+  "contributors": [],
   "devDependencies": {
     "connect": "3.x",
     "jade": "1.x",
