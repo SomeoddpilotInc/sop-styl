@@ -1,0 +1,13 @@
+$base-font-size ?= 14
+
+font-specs(size, leading = null, tracking = 0)
+  font-size (size / $base-font-size)em
+  if size == 0 && leading == 0
+    line-height 0
+  unless leading == null
+    if leading == auto || leading == 1.2em || leading == 120%
+      line-height 1.2em
+    else
+      line-height (leading / size)em
+  unless tracking == 0
+    letter-spacing (tracking / 1000)em
