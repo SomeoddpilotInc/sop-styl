@@ -1,0 +1,4 @@
+.backface {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
