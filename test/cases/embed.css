@@ -4,6 +4,7 @@
   height: 0;
   padding: 0;
   overflow: hidden;
+  padding-bottom: 56.25%;
 }
 .embed-responsive-item {
   position: absolute;
@@ -15,8 +16,26 @@
   border: 0;
 }
 .embed-responsive-16by9 {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
   padding-bottom: 56.25%;
 }
 .embed-responsive-4by3 {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
   padding-bottom: 75%;
+}
+.foo {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 66.66666666666667%;
 }
