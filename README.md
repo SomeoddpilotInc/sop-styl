@@ -16,11 +16,11 @@ A convenient way to make embeds responsive. Supports `16by9` and `4by3`.
 ```stylus
 .embed-container {
   embed-responsive();
+  embed-responsive-16by9();
 }
 
 .embed-item {
   embed-responsive-item();
-  embed-responsive-16by9();
 }
 ```
 
@@ -29,10 +29,10 @@ or
 ```stylus
 .embed-container {
   @extends $embed-responsive;
+  @extends $embed-responsive-4by3;
 }
 
 .embed-item {
   @extends $embed-responsive-item;
-  @extends $embed-responsive-4by3;
 }
 ```
