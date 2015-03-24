@@ -8,3 +8,20 @@ sop-styl
 Someoddpilot's base Stylus framework
 
 Borrowed liberally from [Bootstrap](http://getbootstrap.com) and [Nib](https://github.com/tj/nib)
+
+## Backface Visibility
+
+A convenience method for browser prefixing `backface-visibility`.
+
+```stylus
+.foo {
+  backface-visibility: hidden;
+}
+```
+
+```css
+.foo {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+```
