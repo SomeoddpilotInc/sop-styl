@@ -1,4 +1,4 @@
-$sop-sr-only
+sop-sr-only()
   position absolute
 
   width   1px
@@ -11,7 +11,10 @@ $sop-sr-only
   overflow hidden
   clip     rect(0, 0, 0, 0)
 
-$sop-sr-only-focusable
+$sop-sr-only
+  sop-sr-only()
+
+sop-sr-only-focusable()
   &:before
   &:after
     position static
@@ -23,3 +26,6 @@ $sop-sr-only-focusable
 
     overflow visible
     clip     auto
+
+$sop-sr-only-focusable
+  sop-sr-only-focusable()
