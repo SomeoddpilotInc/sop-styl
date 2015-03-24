@@ -34,3 +34,46 @@ or
   @extends $embed-responsive-item;
 }
 ```
+
+## Font Specs
+
+A convenient way to set font size, line-height, letter-spacing, and smoothing. Assumes a base font-size of 14. This can be reconfigured by setting the `$base-font-size` variable.
+
+```stylus
+.foo {
+  font-specs(16, 1.4, 100, true);
+}
+```
+
+## Vendor Prefix Mixins
+
+Convenient vendor prefixes have been added for:
+
+* backface-visibility
+* appearance
+* transition
+* transform
+* animation
+* animation-timing-function
+* animation-delay
+* animation-duration
+
+## Responsive
+
+A convenient way to make images responsive.
+
+```stylus
+img {
+  img-responsive();
+}
+```
+
+## Screen Reader
+
+Makes an element only available to screen-readers, aiding in accessibility.
+
+```stylus
+.help-text {
+  sop-sr-only();
+}
+```
