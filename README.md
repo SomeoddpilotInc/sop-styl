@@ -9,19 +9,30 @@ Someoddpilot's base Stylus framework
 
 Borrowed liberally from [Bootstrap](http://getbootstrap.com) and [Nib](https://github.com/tj/nib)
 
-## Backface Visibility
+## Responsive Embeds
 
-A convenience method for browser prefixing `backface-visibility`.
+A convenient way to make embeds responsive. Supports `16by9` and `4by3`.
 
 ```stylus
-.foo {
-  backface-visibility: hidden;
+.embed-container {
+  embed-responsive();
+}
+
+.embed-item {
+  embed-responsive-item();
+  embed-responsive-16by9();
 }
 ```
 
-```css
-.foo {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+or
+
+```stylus
+.embed-container {
+  @extends $embed-responsive;
+}
+
+.embed-item {
+  @extends $embed-responsive-item;
+  @extends $embed-responsive-4by3;
 }
 ```
