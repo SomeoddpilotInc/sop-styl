@@ -3,16 +3,16 @@ $base-font-size ?= 14
 font-smoothing(value = antialiased)
   -webkit-font-smoothing value
 
-font-specs(size, leading = null, tracking = 0, smoothed = false)
-  font-size (size / $base-font-size)em
+font-specs(size, leading = null, tracking = 0, smoothed = false, important = null)
+  font-size (size / $base-font-size)em important
   if size == 0 && leading == 0
-    line-height 0
+    line-height 0 important
   unless leading == null
     if leading == auto || leading == 1.2em || leading == 120%
-      line-height 1.2em
+      line-height 1.2em important
     else
-      line-height (leading / size)em
+      line-height (leading / size)em important
   unless tracking == 0
-    letter-spacing (tracking / 1000)em
+    letter-spacing (tracking / 1000)em important
   if smoothed == smooth || smoothed == true
     font-smoothing antialiased
