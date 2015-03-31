@@ -13,3 +13,8 @@ foo-smooth {
   letter-spacing: 0.1em;
   -webkit-font-smoothing: antialiased;
 }
+foo-important-override {
+  font-size: 1.142857142857143em !important;
+  line-height: 1.2em !important;
+  letter-spacing: 0.1em !important;
+}
