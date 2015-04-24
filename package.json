@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexsomeoddpilot/sop-styl.git"
+    "url": "https://github.com/someoddpilotinc/sop-styl.git"
   },
   "keywords": [
     "stylus",
@@ -17,9 +17,9 @@
   "author": "Alex Robertson <alex@someoddpilot.com>",
   "license": "None",
   "bugs": {
-    "url": "https://github.com/alexsomeoddpilot/sop-styl/issues"
+    "url": "https://github.com/someoddpilotinc/sop-styl/issues"
   },
-  "homepage": "https://github.com/alexsomeoddpilot/sop-styl",
+  "homepage": "https://github.com/someoddpilotinc/sop-styl",
   "dependencies": {
     "nib": "*",
     "stylus": ">0.45"
