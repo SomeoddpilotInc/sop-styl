@@ -1,9 +1,9 @@
 sop-styl
 ========
 
-[![Build Status](https://travis-ci.org/alexsomeoddpilot/sop-styl.svg?branch=master)](https://travis-ci.org/alexsomeoddpilot/sop-styl)
-[![Dependency Status](https://david-dm.org/alexsomeoddpilot/sop-styl.svg)](https://david-dm.org/alexsomeoddpilot/sop-styl)
-[![devDependency Status](https://david-dm.org/alexsomeoddpilot/sop-styl/dev-status.svg)](https://david-dm.org/alexsomeoddpilot/sop-styl#info=devDependencies)
+[![Build Status](https://travis-ci.org/someoddpilotinc/sop-styl.svg?branch=master)](https://travis-ci.org/someoddpilotinc/sop-styl)
+[![Dependency Status](https://david-dm.org/someoddpilotinc/sop-styl.svg)](https://david-dm.org/someoddpilotinc/sop-styl)
+[![devDependency Status](https://david-dm.org/someoddpilotinc/sop-styl/dev-status.svg)](https://david-dm.org/someoddpilotinc/sop-styl#info=devDependencies)
 
 Someoddpilot's base Stylus framework
 
