@@ -1,0 +1,12 @@
+fontello(fontFamily, path = '/fonts/')
+  @font-face
+    font-family fontFamily
+    src: url(path + fontFamily + '.eot');
+    src: url(path + fontFamily + '.eot#iefix') format('embedded-opentype'),
+         url(path + fontFamily + '.woff') format('woff'),
+         url(path + fontFamily + '.ttf') format('truetype'),
+         url(path + fontFamily + '.svg#' + fontFamily) format('svg');
+    font-weight normal
+    font-style normal
+
+fontello('too')
