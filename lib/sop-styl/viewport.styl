@@ -1,0 +1,15 @@
+viewport-filled(width = 1, height = 1)
+  width 100vw
+  height auto
+
+  @media (max-aspect-ratio width / height)
+    width auto
+    height 100vh
+
+viewport-fit(width = 1, height = 1)
+  height 100vh
+  width auto
+
+  @media (max-aspect-ratio width / height)
+    height auto
+    width 100vw
