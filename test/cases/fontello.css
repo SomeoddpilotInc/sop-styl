@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'foo';
+  src: url("/fonts/foo.eot");
+  src: url("/fonts/foo.eot#iefix") format('embedded-opentype'), url("/fonts/foo.woff") format('woff'), url("/fonts/foo.ttf") format('truetype'), url("/fonts/foo.svg#foo") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bar';
+  src: url("/build/bar-file.eot");
+  src: url("/build/bar-file.eot#iefix") format('embedded-opentype'), url("/build/bar-file.woff") format('woff'), url("/build/bar-file.ttf") format('truetype'), url("/build/bar-file.svg#bar-file") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+/**
+   * For safety - reset parent styles, that can break glyph codes
+   */
+  font-variant: normal;
+  text-transform: none;
+/**
+   * fix buttons height, for twitter bootstrap
+   */
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.animate-icon:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+/**
+   * For safety - reset parent styles, that can break glyph codes
+   */
+  font-variant: normal;
+  text-transform: none;
+/**
+   * fix buttons height, for twitter bootstrap
+   */
+  line-height: 1em;
+/*
+     * Animation center compensation - margins should be symmetric
+     */
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
