@@ -1,10 +1,45 @@
-fontello(fontFamily, path = '/fonts/')
+setup-font-face(fontFamily, path = '/fonts/', fontFile = fontFamily)
   @font-face
     font-family fontFamily
-    src: url(path + fontFamily + '.eot');
-    src: url(path + fontFamily + '.eot#iefix') format('embedded-opentype'),
-         url(path + fontFamily + '.woff') format('woff'),
-         url(path + fontFamily + '.ttf') format('truetype'),
-         url(path + fontFamily + '.svg#' + fontFamily) format('svg');
+    src: url(path + fontFile + '.eot');
+    src: url(path + fontFile + '.eot#iefix') format('embedded-opentype'),
+         url(path + fontFile + '.woff') format('woff'),
+         url(path + fontFile + '.ttf') format('truetype'),
+         url(path + fontFile + '.svg#' + fontFile) format('svg');
     font-weight normal
     font-style normal
+
+fontello-icon(shouldAnimate = false)
+  font-family "fontello"
+  font-style normal
+  font-weight normal
+  speak none
+
+  display inline-block
+  text-decoration inherit
+  width 1em
+  margin-right .2em
+  text-align center
+
+  /**
+   * For safety - reset parent styles, that can break glyph codes
+   */
+  font-variant normal
+  text-transform none
+
+  /**
+   * fix buttons height, for twitter bootstrap
+   */
+  line-height 1em
+
+  if shouldAnimate
+    /*
+     * Animation center compensation - margins should be symmetric
+     */
+    margin-left .2em
+
+  /**
+   * Font smoothing. That was taken from TWBS
+   */
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale

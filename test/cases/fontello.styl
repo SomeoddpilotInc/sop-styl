@@ -1,3 +1,11 @@
 @import 'sop-styl/fontello'
 
-fontello('foob')
+fontello('foo')
+
+fontello('bar', '/build/', 'bar-file')
+
+.icon:before
+  fontello-icon()
+
+.animate-icon:before
+  fontello-icon(true)
