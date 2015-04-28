@@ -104,6 +104,16 @@ Has an optional boolean parameter for whether to include animation offset.
   content '\e200'
 ```
 
+## Viewport Filled and Fitted
+
+```stylus
+.img
+  viewport-filled(16, 9)
+
+.img--fit
+  viewport-fitted(16, 9)
+```
+
 # TODO
 
 * Touch detection
