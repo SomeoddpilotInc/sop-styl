@@ -92,6 +92,15 @@ Params:
 setup-font-face('fontello', '/assets/font/', 'fontello-alt')
 ```
 
+## Fontello
+
+Includes base fontello icon styling
+
+```stylus
+.icon:before
+  fontello-icon()
+  content '\e200'
+
 # TODO
 
 * Touch detection
