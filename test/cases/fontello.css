@@ -19,7 +19,7 @@
   speak: none;
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
+  width: auto;
   margin-right: 0.2em;
   text-align: center;
 /**
@@ -41,7 +41,7 @@
   speak: none;
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
+  width: auto;
   margin-right: 0.2em;
   text-align: center;
 /**
