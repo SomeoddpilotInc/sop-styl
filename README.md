@@ -78,9 +78,22 @@ Makes an element only available to screen-readers, aiding in accessibility.
 }
 ```
 
+## Font Face
+
+Sets up font face.
+
+Params:
+
+1. font-family name
+2. file root (optional, defaults to `/fonts/`)
+3. file name (optional, defaults to font-family name)
+
+```stylus
+setup-font-face('fontello', '/assets/font/', 'fontello-alt')
+```
+
 # TODO
 
-* Fontello setup
 * Touch detection
 * Viewport filled and centered content
 * Responsive show and hide
