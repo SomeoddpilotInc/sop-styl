@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'foo';
+  src: url("/fonts/foo.eot");
+  src: url("/fonts/foo.eot#iefix") format('embedded-opentype'), url("/fonts/foo.woff") format('woff'), url("/fonts/foo.ttf") format('truetype'), url("/fonts/foo.svg#foo") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bar';
+  src: url("/build/bar-file.eot");
+  src: url("/build/bar-file.eot#iefix") format('embedded-opentype'), url("/build/bar-file.woff") format('woff'), url("/build/bar-file.ttf") format('truetype'), url("/build/bar-file.svg#bar-file") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .icon:before {
   font-family: "fontello";
   font-style: normal;
