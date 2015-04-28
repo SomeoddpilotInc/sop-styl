@@ -96,10 +96,13 @@ setup-font-face('fontello', '/assets/font/', 'fontello-alt')
 
 Includes base fontello icon styling
 
+Has an optional boolean parameter for whether to include animation offset.
+
 ```stylus
 .icon:before
   fontello-icon()
   content '\e200'
+```
 
 # TODO
 
