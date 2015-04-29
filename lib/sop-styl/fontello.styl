@@ -9,7 +9,7 @@ setup-font-face(fontFamily, path = '/fonts/', fontFile = fontFamily)
     font-weight normal
     font-style normal
 
-fontello-icon(shouldAnimate = false)
+$fontello-icon
   font-family "fontello"
   font-style normal
   font-weight normal
@@ -32,14 +32,20 @@ fontello-icon(shouldAnimate = false)
    */
   line-height 1em
 
-  if shouldAnimate
-    /*
-     * Animation center compensation - margins should be symmetric
-     */
-    margin-left .2em
-
   /**
    * Font smoothing. That was taken from TWBS
    */
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
+
+$fontello-icon-animate
+  /*
+   * Animation center compensation - margins should be symmetric
+   */
+  margin-left .2em
+
+fontello-icon(shouldAnimate = false)
+  @extend $fontello-icon
+
+  if shouldAnimate
+    @extend $fontello-icon-animate
