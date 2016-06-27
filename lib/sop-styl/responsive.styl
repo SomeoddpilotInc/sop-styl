@@ -7,3 +7,40 @@ img-responsive()
 
 $img-responsive
   img-responsive()
+
+three-up-grid-item()
+  display inline-block
+  width (100 / 3)%
+
+  @media (max-width ($grid-snap-one))
+    width 50%
+
+  @media (max-width ($grid-snap-two))
+    width 100%
+
+two-thirds-grid-item()
+  display inline-block
+  width (100 / 3 * 2)%
+
+  @media (max-width ($grid-snap-one))
+    width 100%
+
+two-up-grid-item()
+  display inline-block
+  width 50%
+
+  @media (max-width ($grid-snap-two))
+    width 100%
+
+four-up-grid-item()
+  display inline-block
+  width 25%
+
+  @media (max-width ($grid-snap-one))
+    width 50%
+
+  @media (max-width ($grid-snap-two))
+    width 100%
+
+proportion($staticValue = 800, $staticValueUnit = vw)
+  return unit(($staticValue / $grid) * 100, $staticValueUnit)
