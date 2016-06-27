@@ -1,0 +1,29 @@
+absolute-center()
+  position absolute
+  top 50%
+  left 50%
+
+  transform translate(-50%,-50%)
+
+undo-absolute-center()
+  position relative
+  top 0
+  left 0
+
+  display block
+  margin 0 auto
+
+  transform translate(0,0)
+
+vert-center()
+  position absolute
+  top 50%
+
+  transform translateY(-50%)
+
+horz-center()
+  position absolute
+  top 0
+  left 50%
+
+  transform translateX(-50%)
