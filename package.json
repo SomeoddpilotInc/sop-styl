@@ -1,6 +1,6 @@
 {
   "name": "sop-styl",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "Someoddpilot's base Stylus framework",
   "main": "lib/sop-styl.js",
   "scripts": {
