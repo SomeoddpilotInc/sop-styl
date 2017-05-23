@@ -6,6 +6,7 @@ foo {
 foo-auto {
   font-size: 1.142857142857143em;
   line-height: 1.2em;
+  letter-spacing: 0;
 }
 foo-smooth {
   font-size: 1.142857142857143em;
