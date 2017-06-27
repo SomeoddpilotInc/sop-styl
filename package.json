@@ -22,7 +22,7 @@
   "homepage": "https://github.com/someoddpilotinc/sop-styl",
   "dependencies": {
     "nib": "*",
-    "stylus": ">0.45"
+    "stylus": "^0.54.5"
   },
   "engines": {
     "node": ">=0.10"
