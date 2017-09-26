@@ -16,6 +16,9 @@ font-specs(size, leading = null, tracking = null, smoothed = false, important = 
     if tracking == 0
       letter-spacing 0 important
     else
-      letter-spacing (tracking / 1000)em important
+      if unit(tracking) == 'px'
+        letter-spacing (tracking / size)em important
+      else
+        letter-spacing (tracking / 1000)em important
   if smoothed == 'smooth' || smoothed == true
     font-smoothing antialiased

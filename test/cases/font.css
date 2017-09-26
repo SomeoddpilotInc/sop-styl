@@ -3,6 +3,11 @@ foo {
   line-height: 0.1125em;
   letter-spacing: 0.1em;
 }
+foo-sketch-tracking {
+  font-size: 1.142857142857143em;
+  line-height: 0.1125em;
+  letter-spacing: 6.25em;
+}
 foo-auto {
   font-size: 1.142857142857143em;
   line-height: 1.2em;
